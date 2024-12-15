@@ -180,6 +180,30 @@ int main() {
 
     printf("\n=== Final da execução ===\n");
 
+  // Testando implementação
+
+    /*
+    Lista  minhaLista = new_lista();
+    int *p;
+
+    p = (int *)malloc(sizeof(int));
+    *p = 10;
+    appendLista(minhaLista, p);
+
+    p = (int *)malloc(sizeof(int));
+    *p = 20;
+    appendLista(minhaLista, p);
+
+    p = (int *)malloc(sizeof(int));
+    *p = 30;
+    appendLista(minhaLista, p);
+
+    for (int i = 0; i < lenLista(minhaLista); i++){
+        int *q = (int *)elemLista(minhaLista, i);
+        printf("%d\n", *q);
+    }
+    */
+
     
 
   return 0;
