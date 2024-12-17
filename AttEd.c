@@ -204,6 +204,39 @@ int main() {
     }
     */
 
+  /* 
+    t_dado removeLista(Lista l, int pos) {
+    if (pos < 0 || pos >= l->tamanho || l->tamanho == 0) return NULL; // Verifica se posição é válida
+  
+    t_no removido;
+    t_dado dado_removido;
+  
+    if (pos == 0) { // Remover o primeiro elemento
+        removido = l->primeiro;
+        l->primeiro = removido->proximo;
+        if (l->primeiro != NULL) l->primeiro->anterior = NULL;
+        else l->ultimo = NULL; // Lista ficou vazia
+    } else if (pos == l->tamanho - 1) { // Remover o último elemento
+        removido = l->ultimo;
+        l->ultimo = removido->anterior;
+        l->ultimo->proximo = NULL;
+    } else { // Remover do meio
+        removido = l->primeiro;
+        for (int i = 0; i < pos; i++) {
+            removido = removido->proximo;
+        }
+        removido->anterior->proximo = removido->proximo;
+        removido->proximo->anterior = removido->anterior;
+    }
+  
+    dado_removido = removido->dado;
+    free(removido);
+    l->tamanho--;
+  
+    return dado_removido;
+  }
+  */
+
     
 
   return 0;
